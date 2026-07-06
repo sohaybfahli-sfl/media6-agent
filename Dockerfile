@@ -15,4 +15,4 @@ COPY . .
 RUN mkdir -p /app/data
 
 # Default command
-CMD ["node", "main.js"]
+CMD ["node", "main.js", "--server"]
