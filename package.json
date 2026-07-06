@@ -1,0 +1,40 @@
+{
+  "name": "media6-workflow-agent",
+  "version": "1.0.0",
+  "description": "Agent IA pour automatiser le workflow Media6 - Résumés email + WeChat, synchronisation calendrier Outlook",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node main.js",
+    "test": "echo \"Tests not implemented yet\"",
+    "clean": "rm -f /tmp/processed_messages.json /tmp/first_run_complete"
+  },
+  "keywords": [
+    "workflow",
+    "email",
+    "wechat",
+    "outlook",
+    "automation",
+    "media6"
+  ],
+  "author": "Sohayb Fahli-Laout",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.2",
+    "xlsx": "^0.18.5",
+    "dotenv": "^16.3.1",
+    "node-schedule": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/media6/workflow-agent"
+  }
+}
