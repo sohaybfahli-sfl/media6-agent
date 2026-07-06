@@ -1,5 +1,18 @@
-FROM node:18
+FROM node:18-alpine
+
 WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci --only=production
+
+# Copy application code
 COPY . .
-RUN npm install
-CMD ["npm", "start"]
+
+# Create state directory
+RUN mkdir -p /app/data
+
+# Default command
+CMD ["node", "main.js"]
