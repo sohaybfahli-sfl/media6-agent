@@ -7,8 +7,7 @@
     "start": "node main.js",
     "run": "node main.js --run",
     "backfill": "node main.js --backfill --run",
-    "server": "node main.js --server",
-    "dev": "nodemon main.js"
+    "server": "node main.js --server"
   },
   "keywords": [
     "workflow",
@@ -24,9 +23,6 @@
     "axios": "^1.6.2",
     "node-schedule": "^2.1.1",
     "express": "^4.18.2"
-  },
-  "optionalDependencies": {
-    "nodemon": "^3.0.1"
   },
   "engines": {
     "node": ">=18.0.0"
